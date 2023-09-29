@@ -1,0 +1,9 @@
+omegaconf
+pyserial
+matplotlib
+scikit-learn
+scikit-learn-intelex
+tqdm
+numpy
+pandas
+seaborn

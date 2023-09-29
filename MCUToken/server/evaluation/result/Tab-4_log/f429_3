@@ -1,0 +1,5 @@
+Training
+Training OK
+hardware-mimic used_task_number:5 target_device:stm32 repeat_time:400 accept_low_bound:3 TP:0.0, FN:0.0, TN:2057, FP:315, TPR:0 Pre:0.0 FPR:0.13279932546374368
+hardware-mimic used_task_number:5 target_device:esp32 repeat_time:400 accept_low_bound:3 TP:0.0, FN:0.0, TN:34773, FP:0, TPR:0 Pre:0 FPR:0.0
+hardware-mimic used_task_number:5 target_device:stm32f103 repeat_time:400 accept_low_bound:3 TP:0.0, FN:0.0, TN:5892, FP:0, TPR:0 Pre:0 FPR:0.0

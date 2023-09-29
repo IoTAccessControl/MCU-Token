@@ -1,0 +1,43 @@
+
+app:
+- ../../MCUToken/iot_client/app/*.h
+- ../../MCUToken/iot_client/app/*.c
+
+fp_gen:
+- ../../MCUToken/iot_client/fp_gen/*.h
+- ../../MCUToken/iot_client/fp_gen/*.c
+
+INCLUDE:
+- ../../MCUToken/iot_client/app/
+- ../../MCUToken/iot_client/fp_gen/
+
+STM32F4-HAL:
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_iwdg.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_usart.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dac.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dac_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
+
+DEFINE:
+- SYS_CORTEX_M4
+- DEV_STM32_F429_DISCO
+- USE_KEIL

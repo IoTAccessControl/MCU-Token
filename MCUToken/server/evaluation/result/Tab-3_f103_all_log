@@ -1,0 +1,79 @@
+Training
+Training OK
+Test in closed-world
+closed-world-test task:DAC_ADC TP:616 TN:7551 FP:4609, FN:24 arg_number:32, TPR:0.9625, FPR:0.3790296052631579, Pre:0.11789473684210526
+closed-world-test task:RTCFre TP:1587 TN:29803 FP:597, FN:13 arg_number:80, TPR:0.991875, FPR:0.019638157894736843, Pre:0.7266483516483516
+closed-world-test task:FPU TP:3066 TN:48159 FP:27841, FN:934 arg_number:200, TPR:0.7665, FPR:0.36632894736842103, Pre:0.0992008282913256
+closed-world-test task:RTCPha TP:1193 TN:19189 FP:11211, FN:407 arg_number:80, TPR:0.745625, FPR:0.3687828947368421, Pre:0.09617865204772653
+closed-world-test task:SRAM TP:4864 TN:95352 FP:28, FN:156 arg_number:251, TPR:0.9689243027888447, FPR:0.0002935625917383099, Pre:0.9942763695829926
+closed-world-test task:PWM TP:1600 TN:24485 FP:13515, FN:400 arg_number:100, TPR:0.8, FPR:0.3556578947368421, Pre:0.10585511081706914
+Finish test in closed-world
+Test with noise
+noise-test noise:0.1 task:DAC_ADC TP:8 TN:0, FP:0, FN:632
+noise-test noise:0.11 task:DAC_ADC TP:8 TN:0, FP:0, FN:632
+noise-test noise:0.12 task:DAC_ADC TP:0 TN:0, FP:0, FN:640
+noise-test noise:0.13 task:DAC_ADC TP:4 TN:0, FP:0, FN:636
+noise-test noise:0.14 task:DAC_ADC TP:4 TN:0, FP:0, FN:636
+noise-test noise:0.15 task:DAC_ADC TP:6 TN:0, FP:0, FN:634
+noise-test noise:0.16 task:DAC_ADC TP:4 TN:0, FP:0, FN:636
+noise-test noise:0.17 task:DAC_ADC TP:22 TN:0, FP:0, FN:618
+noise-test noise:0.18 task:DAC_ADC TP:16 TN:0, FP:0, FN:624
+noise-test noise:0.19 task:DAC_ADC TP:4 TN:0, FP:0, FN:636
+noise-test noise:0.2 task:DAC_ADC TP:6 TN:0, FP:0, FN:634
+noise-test noise:0.1 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.11 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.12 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.13 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.14 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.15 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.16 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.17 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.18 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.19 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.2 task:RTCFre TP:0 TN:0, FP:0, FN:1600
+noise-test noise:0.1 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.11 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.12 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.13 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.14 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.15 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.16 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.17 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.18 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.19 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.2 task:FPU TP:0 TN:0, FP:0, FN:4000
+noise-test noise:0.1 task:RTCPha TP:6 TN:0, FP:0, FN:1594
+noise-test noise:0.11 task:RTCPha TP:5 TN:0, FP:0, FN:1595
+noise-test noise:0.12 task:RTCPha TP:6 TN:0, FP:0, FN:1594
+noise-test noise:0.13 task:RTCPha TP:3 TN:0, FP:0, FN:1597
+noise-test noise:0.14 task:RTCPha TP:1 TN:0, FP:0, FN:1599
+noise-test noise:0.15 task:RTCPha TP:1 TN:0, FP:0, FN:1599
+noise-test noise:0.16 task:RTCPha TP:2 TN:0, FP:0, FN:1598
+noise-test noise:0.17 task:RTCPha TP:2 TN:0, FP:0, FN:1598
+noise-test noise:0.18 task:RTCPha TP:2 TN:0, FP:0, FN:1598
+noise-test noise:0.19 task:RTCPha TP:1 TN:0, FP:0, FN:1599
+noise-test noise:0.2 task:RTCPha TP:1 TN:0, FP:0, FN:1599
+noise-test noise:0.1 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.11 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.12 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.13 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.14 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.15 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.16 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.17 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.18 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.19 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.2 task:SRAM TP:0 TN:0, FP:0, FN:5020
+noise-test noise:0.1 task:PWM TP:3 TN:0, FP:0, FN:1997
+noise-test noise:0.11 task:PWM TP:3 TN:0, FP:0, FN:1997
+noise-test noise:0.12 task:PWM TP:1 TN:0, FP:0, FN:1999
+noise-test noise:0.13 task:PWM TP:2 TN:0, FP:0, FN:1998
+noise-test noise:0.14 task:PWM TP:2 TN:0, FP:0, FN:1998
+noise-test noise:0.15 task:PWM TP:1 TN:0, FP:0, FN:1999
+noise-test noise:0.16 task:PWM TP:0 TN:0, FP:0, FN:2000
+noise-test noise:0.17 task:PWM TP:1 TN:0, FP:0, FN:1999
+noise-test noise:0.18 task:PWM TP:1 TN:0, FP:0, FN:1999
+noise-test noise:0.19 task:PWM TP:2 TN:0, FP:0, FN:1998
+noise-test noise:0.2 task:PWM TP:2 TN:0, FP:0, FN:1998
+Finish test with noise
+auth-multiple used_task_number:5 repeat_time:400 accept_low_bound:3 TP:1997, FN:42, TN:17638, FP:2946, TPR:0.9794016674840608 Pre:0.4040056645761683 FPR:0.14312087057909056

@@ -1,0 +1,43 @@
+data split
+Read DAC_ADC data
+Read PWM data
+Read RTCFre data
+Read RTCPha data
+Read FPU data
+Read SRAM data
+data set split ok
+dry
+frozen
+hot
+normal
+wet
+DAC_ADC env0:dry env1:previous distance:0.001637361432433052 TPR:0
+DAC_ADC env0:frozen env1:previous distance:0.02584153073357377 TPR:0
+DAC_ADC env0:hot env1:previous distance:0.03005805570385404 TPR:0
+DAC_ADC env0:normal env1:previous distance:0.0014069809453687231 TPR:0
+DAC_ADC env0:wet env1:previous distance:0.001811248697543962 TPR:0
+RTCFre env0:dry env1:previous distance:0.0007823535448957731 TPR:0
+RTCFre env0:frozen env1:previous distance:0.036921048216863726 TPR:0
+RTCFre env0:hot env1:previous distance:0.024585719470294618 TPR:0
+RTCFre env0:normal env1:previous distance:0.0006625930463697505 TPR:0
+RTCFre env0:wet env1:previous distance:0.0008489810640747544 TPR:0
+FPU env0:dry env1:previous distance:8.340773876337054e-06 TPR:0
+FPU env0:frozen env1:previous distance:8.340773876337054e-06 TPR:0
+FPU env0:hot env1:previous distance:8.340773876337054e-06 TPR:0
+FPU env0:normal env1:previous distance:8.340773876337054e-06 TPR:0
+FPU env0:wet env1:previous distance:8.340773876337054e-06 TPR:0
+RTCPha env0:dry env1:previous distance:0.020954659131195236 TPR:0
+RTCPha env0:frozen env1:previous distance:0.027661623976817217 TPR:0
+RTCPha env0:hot env1:previous distance:0.026448422102641672 TPR:0
+RTCPha env0:normal env1:previous distance:0.020486561467802145 TPR:0
+RTCPha env0:wet env1:previous distance:0.0213954559107312 TPR:0
+SRAM env0:dry env1:previous distance:0.06774686729320803 TPR:0
+SRAM env0:frozen env1:previous distance:0.0894237819102846 TPR:0
+SRAM env0:hot env1:previous distance:0.09419782710124641 TPR:0
+SRAM env0:normal env1:previous distance:0.06729695727521162 TPR:0
+SRAM env0:wet env1:previous distance:0.06760939478770912 TPR:0
+PWM env0:dry env1:previous distance:0.0141560994536173 TPR:0
+PWM env0:frozen env1:previous distance:0.020167280181445854 TPR:0
+PWM env0:hot env1:previous distance:0.021569190416806945 TPR:0
+PWM env0:normal env1:previous distance:0.013513820562445433 TPR:0
+PWM env0:wet env1:previous distance:0.01670695793400259 TPR:0

@@ -1,0 +1,35 @@
+
+(py38) C:\Users\xiaoyue\Documents\research_document\code\fingerprint\IoTFringerprint\uDevFi\server\evaluation>python auth.py --used_task_number 5 --repeat_time 500 --accept_low_bound 1 --all_data 0 
+data split
+data set split ok
+Training
+Training OK
+auth-multiple used_task_number:5 repeat_time:500 accept_low_bound:1 TP:8952, FN:46, TN:56467, FP:33516, TPR:0.9948877528339631 Pre:0.21079400960723368 FPR:0.37247035551159663
+
+(py38) C:\Users\xiaoyue\Documents\research_document\code\fingerprint\IoTFringerprint\uDevFi\server\evaluation>python auth.py --used_task_number 5 --repeat_time 500 --accept_low_bound 2 --all_data 0 
+data split
+data set split ok
+Training
+Training OK
+auth-multiple used_task_number:5 repeat_time:500 accept_low_bound:2 TP:8950, FN:49, TN:81662, FP:8326, TPR:0.9945549505500612 Pre:0.5180597360500115 FPR:0.09252344757078722
+
+(py38) C:\Users\xiaoyue\Documents\research_document\code\fingerprint\IoTFringerprint\uDevFi\server\evaluation>python auth.py --used_task_number 5 --repeat_time 500 --accept_low_bound 3 --all_data 0 
+data split
+data set split ok
+Training
+Training OK
+auth-multiple used_task_number:5 repeat_time:500 accept_low_bound:3 TP:8868, FN:131, TN:88048, FP:1935, TPR:0.9854428269807757 Pre:0.8208830880311024 FPR:0.0215040618783548
+
+(py38) C:\Users\xiaoyue\Documents\research_document\code\fingerprint\IoTFringerprint\uDevFi\server\evaluation>python auth.py --used_task_number 5 --repeat_time 500 --accept_low_bound 4 --all_data 0 
+data split
+data set split ok
+Training
+Training OK
+auth-multiple used_task_number:5 repeat_time:500 accept_low_bound:4 TP:8269, FN:728, TN:89771, FP:211, TPR:0.919084139157497 Pre:0.9751179245283019 FPR:0.0023449134271298702
+
+(py38) C:\Users\xiaoyue\Documents\research_document\code\fingerprint\IoTFringerprint\uDevFi\server\evaluation>python auth.py --used_task_number 5 --repeat_time 500 --accept_low_bound 5 --all_data 0 
+data split
+data set split ok
+Training
+Training OK
+auth-multiple used_task_number:5 repeat_time:500 accept_low_bound:5 TP:5396, FN:3604, TN:89962, FP:21, TPR:0.5995555555555555 Pre:0.9961233154882776 FPR:0.00023337741573408312

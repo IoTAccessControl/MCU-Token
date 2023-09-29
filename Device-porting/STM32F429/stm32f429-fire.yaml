@@ -1,0 +1,30 @@
+
+app:
+- ../../uDevFi/iot_client/app/*.h
+- ../../uDevFi/iot_client/app/*.c
+
+fp_gen:
+- ../../uDevFi/iot_client/fp_gen/*.h
+- ../../uDevFi/iot_client/fp_gen/*.c
+
+INCLUDE:
+- ../../uDevFi/iot_client/app/
+- ../../uDevFi/iot_client/fp_gen/
+
+STM32F4-HAL:
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dac.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dac_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
+- Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
+
+DEFINE:
+- SYS_CORTEX_M4
+- DEV_STM32_F429_FIRE
+- USE_KEIL
