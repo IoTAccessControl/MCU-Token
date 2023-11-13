@@ -11,7 +11,7 @@ support devices
 
 1. Download ESP-IDF (version 4.4).
 
-2. Come to the filedir "*Devices/ESP32/esp32s2*".
+2. Come to the filedir "*Device-porting/ESP32/esp32s2*".
 
 3. Build and download programs as below:
 ```
@@ -46,6 +46,8 @@ STM32F103
 
 STM32F429
 > PA5 -- PC7
+
+If your GPIOs used below are occupied, you can refer to "[../MCUToken/iot_client/readme.md](../MCUToken/iot_client/readme.md)" to change the PINs used.
 
 ### Data collection && Token generation
 
@@ -112,6 +114,31 @@ Tips:
 - The clock task corresponds to the task in `MCUToken/iot_client/fp_gen/task_clock.c Line 363` and `MCUToken/server/tasks/task_clock.yaml`. 
 
 - Unfortunately, Renode cannot read the MCU main frequency time, so the task execution result cannot be displayed normally. At the same time, the serial port in the simulator will be damaged after a task is executed. But these problems don't occur on real hardware.
+
+### An example on ESP32S2
+
+Here we give a running example on ESP32S2.
+
+After flashing the firmwire, you can see initialization information as below.
+```bash
+  version: Show Version Code
+  fp_gen: fp_gen STM32. Generate fringerprint data for specific platforms.
+  token_gen: Generate token for the target command
+$ 
+```
+
+Run `fp_gen STM32 11010 0 0` and you can get the log in your COM as below (the output are sequences of u8 so they are unreadable).
+```bash
+  version: Show Version Code
+  fp_gen: fp_gen STM32. Generate fringerprint data for specific platforms.
+  token_gen: Generate token for the target command
+$ fp_gen STM32 13006 0 0 0 0 0 0 0
+?□|?
+?□l?
+...
+Finish Task: 3006
+$ 
+```
 
 ### Expand new devices
 

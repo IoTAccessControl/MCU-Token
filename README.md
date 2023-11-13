@@ -9,6 +9,8 @@ This is the code for paper "From Hardware Fingerprint to Access Token: Enhancing
       └── server # code for MCU-Token' backend authenticate service
 ```
 
+"[MCUToken/iot_client/readme.md](MCUToken/iot_client/readme.md)" is a code document that describes some important code fragments.
+
 ## Tips for Artifact Evaluation  
 
 1. Run MCU-Token  

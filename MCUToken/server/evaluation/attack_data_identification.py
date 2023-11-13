@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-from sklearnex import patch_sklearn, unpatch_sklearn
-patch_sklearn()
 
 import argparse
 import sklearn.ensemble

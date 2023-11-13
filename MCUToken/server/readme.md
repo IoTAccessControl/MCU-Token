@@ -13,7 +13,7 @@ server
 
 ### Data collection
 
-Before you start collecting data, make sure you have installed the programs in "../../Devices" and connected the device to your PC.
+Before you start collecting data, make sure you have installed the programs in "../../Device-porting" and connected the device to your PC.
 
 If you only want to reproduce the results in the paper, go to the next section.
 

@@ -1,6 +1,3 @@
-from sklearnex import patch_sklearn, unpatch_sklearn
-patch_sklearn()
-
 import pandas as pd
 import numpy as np
 import sklearn
