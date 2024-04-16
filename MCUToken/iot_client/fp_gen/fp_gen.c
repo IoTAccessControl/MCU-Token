@@ -2,7 +2,7 @@
 #include "usart.h"
 #include "fp_gen.h"
 #include "utils.h"
-#include "time.h"
+#include <time.h>
 
 int send_package(uint8_t *buf, int len) {
 	// Length Type Value

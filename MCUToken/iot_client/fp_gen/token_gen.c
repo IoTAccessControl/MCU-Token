@@ -26,7 +26,7 @@ const task_token_func_multi token_tasks[] = {
   {5, rtc_phra_task},
 };
 
-void generator_token(const char *operation, const char* nonce, const char** payloads);
+//void generator_token(const char *operation, const char* nonce, const char** payloads);
 
 int token_generate(int argc, char *argv[]) {
   char nonce[12];

@@ -6,3 +6,5 @@ workspace.*
 *.d
 *.uvoptx
 build
+*.project
+*.cproject
