@@ -8,7 +8,7 @@
 #include "usart.h"
 
 // receive buffer from USART
-extern int usart_read_buf(unsigned char *buf, int len);
+//extern int usart_read_buf(unsigned char *buf, int len);
 
 #define SHELL_BUFFER_SIZE 128
 #define SHELL_PROMPT "$ "
@@ -16,12 +16,19 @@ extern int usart_read_buf(unsigned char *buf, int len);
 	for (const sShellCommand *command = g_shell_commands; \
 		command < &g_shell_commands[g_num_shell_commands]; \
 		++command)
+#define USART_BUFFER_SIZE 1024
 
 static bool exit_shell;
+
 static struct shell_context {
 	uint32_t rx_pos;
 	char rx_buffer[SHELL_BUFFER_SIZE];
 } shell_cli;
+
+//typedef struct {
+//    uint32_t rx_pos;
+//    char rx_buffer[USART_BUFFER_SIZE];
+//} usart_context;
 
 static void cli_print_help(void);
 
@@ -74,8 +81,8 @@ static void shell_process(void) {
 	if (shell_last_char() != '\n' && shell_last_char() != '\r') {
 		return;
 	}
-	// echo input to shell 
-	//shell_put_str((const uint8_t *) shell_cli.rx_buffer, shell_cli.rx_pos);
+	//echo input to shell 
+	shell_put_str((const uint8_t *) shell_cli.rx_buffer, shell_cli.rx_pos);
 
 	int argc = 0;
 	const int max_args = 10;
@@ -141,3 +148,26 @@ void run_shell_cli(void) {
 		shell_receive_char(c);
 	}
 }
+
+//read from usart implemention
+
+//usart_context context;
+//
+//usart_context* usart_read_buf(usart_context* ctx,int len) {
+//    if (ctx == NULL || len > USART_BUFFER_SIZE) {
+//        return NULL; // Error handling: null pointer or buffer too small
+//    }
+//
+//    ctx->rx_pos = 0;
+//    int ch;
+//    for (int i = 0; i < len; ++i) {
+//        ch = usart_getchar(); // Assuming usart_getchar() returns -1 on error
+//        if (ch == -1) {
+//            break; // Handle read error or no more data
+//        }
+//        ctx->rx_buffer[ctx->rx_pos++] = (char)ch;
+//    }
+//
+//    return ctx;
+//}
+
