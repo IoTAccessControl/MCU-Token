@@ -10,8 +10,7 @@
 #include "shell.h"
 #include "defs.h"
 // avoid the circle depencies
-
-//这里的引用没问题，重新使用clion打开文件就能正常使用
+//explore here to add new function
 #include "fp_gen.h"
 #include "token_gen.h"
 #include "dev_reg.h"

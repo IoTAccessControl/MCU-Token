@@ -36,7 +36,7 @@ static inline void shell_echo_str(const char *str) {
 	shell_put_str((const uint8_t *) str, strlen(str));
 }
 
-static void shell_printf(char *fmt, ...) {
+void shell_printf(char *fmt, ...) {
 	static char log_buf[256];
 	va_list args;
 	va_start(args, fmt);
@@ -149,25 +149,5 @@ void run_shell_cli(void) {
 	}
 }
 
-//read from usart implemention
 
-//usart_context context;
-//
-//usart_context* usart_read_buf(usart_context* ctx,int len) {
-//    if (ctx == NULL || len > USART_BUFFER_SIZE) {
-//        return NULL; // Error handling: null pointer or buffer too small
-//    }
-//
-//    ctx->rx_pos = 0;
-//    int ch;
-//    for (int i = 0; i < len; ++i) {
-//        ch = usart_getchar(); // Assuming usart_getchar() returns -1 on error
-//        if (ch == -1) {
-//            break; // Handle read error or no more data
-//        }
-//        ctx->rx_buffer[ctx->rx_pos++] = (char)ch;
-//    }
-//
-//    return ctx;
-//}
 

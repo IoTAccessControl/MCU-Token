@@ -21,6 +21,6 @@ typedef struct {
 //device initialization
 void dev_ini(char* device_id,char* product_order,char* device_secret);
 
-void updateDeviceSecret(device_instance* dev);
+//void updateDeviceSecret(device_instance* dev);
 
 #endif //MCU_TOKEN_DEVICE_DATA_H

@@ -1,8 +1,12 @@
+#include <stdlib.h>
+
 #include "dev_reg.h"
 #include "utils.h"
 #include "device_data.h"
 #include "shell.h"
 #include "aes.h"
+#include "base64.h"
+
 
 extern device_instance deviceInstance;
 
@@ -37,6 +41,49 @@ int dev_reg(int argc, char *argv[]) {
 
     // 加密数据
     AES_CBC_encrypt_buffer(&ctx, buffer, paddedSize);
+
+    uint8_t* buffer_copy = (uint8_t*)malloc(paddedSize);
+//    if (buffer_copy == NULL) {
+//        // 处理内存分配失败的情况
+//        fprintf(stderr, "Memory allocation failed\n");
+//        //exit(EXIT_FAILURE);
+//    }
+
+    memcpy(buffer_copy, buffer, paddedSize);
+    //对buffer_copy进行base64编码
+    int base64_length = 4 * ((paddedSize + 2) / 3);  // 计算Base64编码长度
+    char *base64data = malloc(base64_length + 1); // 分配内存，加1为终结符'\0'
+
+//    if (base64data == NULL) {
+//        fprintf(stderr, "Memory allocation failed for base64data\n");
+//        //exit(EXIT_FAILURE);
+//    }
+
+    base64_encode(buffer_copy, paddedSize, base64data);
+    printf("Base64 data: %s\n", base64data);
+    //shell_put_str(base64data,base64_length + 1);
+    free(buffer_copy);
+
+    // 解码Base64数据
+    uint8_t *decoded_data = malloc(paddedSize); // 分配内存以存储解码后的数据
+//    if (decoded_data == NULL) {
+//        fprintf(stderr, "Memory allocation failed for decoded_data\n");
+//        free(base64data);
+//        //exit(EXIT_FAILURE);
+//    }
+
+    base64_decode(base64data, decoded_data, base64_length); // 解码
+    free(base64data);  // 释放base64data
+
+    printf("try to decode base64data:\n");
+    // 比较原始buffer和解码后的数据
+    if (memcmp(buffer, decoded_data, paddedSize) == 0) {
+        printf("Decoded data matches original data.\n");
+    } else {
+        printf("Decoded data does not match original data.\n");
+    }
+		
+
     printf("Encrypted data:\n");
     for (int i = 0; i < paddedSize; i++) {
         printf("%02X ", buffer[i]);
@@ -45,12 +92,14 @@ int dev_reg(int argc, char *argv[]) {
 
     // 重置IV，因为加密操作会改变它
     AES_init_ctx_iv(&ctx, key, iv);
-    AES_CBC_decrypt_buffer(&ctx, buffer, paddedSize);
+    //使用decoded_data进行解密
+    AES_CBC_decrypt_buffer(&ctx, decoded_data, paddedSize);
 
     printf("Decrypted data:\n");
-    printf("Device ID: %s\n", ((device_instance*)buffer)->device_id);
-    printf("Product Order: %s\n", ((device_instance*)buffer)->product_order);
-    printf("Device Secret: %s\n", ((device_instance*)buffer)->device_secret);
-		
-		return 0;
+    printf("Device ID: %s\n", ((device_instance*)decoded_data)->device_id);
+    printf("Product Order: %s\n", ((device_instance*)decoded_data)->product_order);
+    printf("Device Secret: %s\n", ((device_instance*)decoded_data)->device_secret);
+    free(decoded_data);
+
+    return 0;
 }

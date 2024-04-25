@@ -1,6 +1,8 @@
 #include "utils.h"
 #include <stdarg.h>
+#include <stdlib.h>
 #include <string.h>
+
 
 #ifdef DEBUG
 
@@ -145,4 +147,5 @@ char* utoa(unsigned int num, char* str, int base) {
 	}
 	return str;
 }
+
 #endif // USE_KEIL
