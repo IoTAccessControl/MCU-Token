@@ -339,7 +339,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F429xx,USE_STM32F429I_DISCOCUSTOM_DEFINE SYS_CORTEX_M4 DEV_STM32_F429_DISCO USE_KEIL</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Inc;..\..\Stm32Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\..\Stm32Drivers\STM32F4xx_HAL_Driver\Inc;..\..\Stm32Drivers\BSP\STM32F429I-Discovery;MY_SEP;..\..\..\..\MCUToken\iot_client\app\;..\..\..\..\MCUToken\iot_client\fp_gen\</IncludePath>
+              <IncludePath>..\Inc;..\..\Stm32Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\..\Stm32Drivers\STM32F4xx_HAL_Driver\Inc;..\..\Stm32Drivers\BSP\STM32F429I-Discovery;MY_SEP;..\..\..\..\MCUToken\iot_client\app\;..\..\..\..\MCUToken\iot_client\ota_protocols</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -459,16 +459,6 @@
               <FilePath>..\..\..\..\MCUToken\iot_client\app\flash_internal.h</FilePath>
             </File>
             <File>
-              <FileName>iwdg.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\MCUToken\iot_client\app\iwdg.h</FilePath>
-            </File>
-            <File>
-              <FileName>pwm.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\MCUToken\iot_client\app\pwm.h</FilePath>
-            </File>
-            <File>
               <FileName>rtc.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\..\..\MCUToken\iot_client\app\rtc.h</FilePath>
@@ -514,16 +504,6 @@
               <FilePath>..\..\..\..\MCUToken\iot_client\app\flash_internal.c</FilePath>
             </File>
             <File>
-              <FileName>iwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\MCUToken\iot_client\app\iwdg.c</FilePath>
-            </File>
-            <File>
-              <FileName>pwm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\MCUToken\iot_client\app\pwm.c</FilePath>
-            </File>
-            <File>
               <FileName>rtc.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\MCUToken\iot_client\app\rtc.c</FilePath>
@@ -554,16 +534,6 @@
               <FilePath>..\..\..\..\MCUToken\iot_client\app\utils.c</FilePath>
             </File>
             <File>
-              <FileName>device_data.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\MCUToken\iot_client\app\device_data.c</FilePath>
-            </File>
-            <File>
-              <FileName>device_data.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\MCUToken\iot_client\app\device_data.h</FilePath>
-            </File>
-            <File>
               <FileName>aes.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\..\..\MCUToken\iot_client\app\aes.h</FilePath>
@@ -577,26 +547,6 @@
               <FileName>base64.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\..\..\MCUToken\iot_client\app\base64.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>fp_gen</GroupName>
-          <Files>
-            <File>
-              <FileName>dev_reg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\MCUToken\iot_client\fp_gen\dev_reg.c</FilePath>
-            </File>
-            <File>
-              <FileName>aes.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\MCUToken\iot_client\app\aes.c</FilePath>
-            </File>
-            <File>
-              <FileName>aes.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\..\..\MCUToken\iot_client\app\aes.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -717,6 +667,41 @@
               <FileName>stm32f4xx_hal_dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>ota_protocol</GroupName>
+          <Files>
+            <File>
+              <FileName>dev_reg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\ota_protocols\dev_reg.c</FilePath>
+            </File>
+            <File>
+              <FileName>dev_reg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\ota_protocols\dev_reg.h</FilePath>
+            </File>
+            <File>
+              <FileName>device_data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\ota_protocols\device_data.c</FilePath>
+            </File>
+            <File>
+              <FileName>device_data.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\ota_protocols\device_data.h</FilePath>
+            </File>
+            <File>
+              <FileName>aes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\app\aes.c</FilePath>
+            </File>
+            <File>
+              <FileName>aes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\app\aes.h</FilePath>
             </File>
           </Files>
         </Group>
