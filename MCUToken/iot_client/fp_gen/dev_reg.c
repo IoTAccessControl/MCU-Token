@@ -61,6 +61,7 @@ int dev_reg(int argc, char *argv[]) {
 
     base64_encode(buffer_copy, paddedSize, base64data);
     printf("Base64 data: %s\n", base64data);
+		shell_printf(base64data);
     //shell_put_str(base64data,base64_length + 1);
     free(buffer_copy);
 
@@ -73,6 +74,7 @@ int dev_reg(int argc, char *argv[]) {
 //    }
 
     base64_decode(base64data, decoded_data, base64_length); // 解码
+		
     free(base64data);  // 释放base64data
 
     printf("try to decode base64data:\n");

@@ -16,8 +16,8 @@
         <TargetCommonOption>
           <Device>STM32F429ZITx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.16.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>Keil.STM32F4xx_DFP.2.17.0</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000-0x2002FFFF) IRAM2(0x10000000-0x1000FFFF) IROM(0x8000000-0x81FFFFF) CLOCK(25000000) CPUTYPE("Cortex-M4") FPU2</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -553,6 +553,31 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\..\MCUToken\iot_client\app\utils.c</FilePath>
             </File>
+            <File>
+              <FileName>device_data.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\app\device_data.c</FilePath>
+            </File>
+            <File>
+              <FileName>device_data.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\app\device_data.h</FilePath>
+            </File>
+            <File>
+              <FileName>aes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\app\aes.h</FilePath>
+            </File>
+            <File>
+              <FileName>base64.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\app\base64.c</FilePath>
+            </File>
+            <File>
+              <FileName>base64.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\app\base64.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -597,6 +622,21 @@
               <FileName>token_gen.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\MCUToken\iot_client\fp_gen\token_gen.c</FilePath>
+            </File>
+            <File>
+              <FileName>dev_reg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\fp_gen\dev_reg.c</FilePath>
+            </File>
+            <File>
+              <FileName>aes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\app\aes.c</FilePath>
+            </File>
+            <File>
+              <FileName>aes.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\..\..\MCUToken\iot_client\app\aes.h</FilePath>
             </File>
           </Files>
         </Group>
