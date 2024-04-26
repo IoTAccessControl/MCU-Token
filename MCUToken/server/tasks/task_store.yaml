@@ -1,9 +1,0 @@
-Platform:
-  STM32
-Dev:
-  stm32f429-disco
-Task:
-  - argc: 3
-    arg0: 15001 
-    arg1: 0
-    arg2: 0
