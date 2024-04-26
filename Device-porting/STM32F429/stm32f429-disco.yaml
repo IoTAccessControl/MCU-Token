@@ -4,12 +4,12 @@ app:
 - ../../MCUToken/iot_client/app/*.c
 
 fp_gen:
-- ../../MCUToken/iot_client/fp_gen/*.h
-- ../../MCUToken/iot_client/fp_gen/*.c
+- ../../MCUToken/iot_client/ota_protocols/*.h
+- ../../MCUToken/iot_client/ota_protocols/*.c
 
 INCLUDE:
 - ../../MCUToken/iot_client/app/
-- ../../MCUToken/iot_client/fp_gen/
+- ../../MCUToken/iot_client/ota_protocols/
 
 STM32F4-HAL:
 - Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c

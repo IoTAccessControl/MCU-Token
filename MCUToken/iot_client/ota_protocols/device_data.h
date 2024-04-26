@@ -5,9 +5,9 @@
 #ifndef MCU_TOKEN_DEVICE_DATA_H
 #define MCU_TOKEN_DEVICE_DATA_H
 #include <string.h>
-#include "app_port.h"
-#include "shell.h"
-#include "usart.h"
+#include "../app/app_port.h"
+#include "../app/shell.h"
+#include "../app/usart.h"
 
 typedef struct {
     const char* device_id;      // 设备ID

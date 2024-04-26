@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 #include <stdint.h>
-#include "device_data.h"
 #include "defs.h"
 
 void debug_log(const char *fmt, ...);
