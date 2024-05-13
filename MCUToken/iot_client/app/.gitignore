@@ -1,0 +1,10 @@
+.idea
+*.pyc
+.vscode
+workspace.*
+*.o
+*.d
+*.uvoptx
+build
+*.project
+*.cproject

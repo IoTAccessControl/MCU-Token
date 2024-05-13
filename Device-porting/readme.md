@@ -63,15 +63,15 @@ token_gen SET_TEM SEAT1 25 SEAT2 26
 
 # data collection
 # FPU tasks
-fp_gen STM32 11010 0 0
+ota_protocols STM32 11010 0 0
 # RTC tasks
-fp_gen STM32 14004 0 0 0 0 0 0 0
+ota_protocols STM32 14004 0 0 0 0 0 0 0
 # DAC/ADC && PWM tasks
-fp_gen STM32 13006 0 0 0 0 0 0 0
+ota_protocols STM32 13006 0 0 0 0 0 0 0
 # SRAM tasks
-fp_gen STM32 15001 0 0
+ota_protocols STM32 15001 0 0
 # encryption
-fp_gen STM32 16000 1
+ota_protocols STM32 16000 1
 ```
 
 ### Simulate in renode
@@ -122,7 +122,7 @@ Here we give a running example on ESP32S2.
 After flashing the firmwire, you can see initialization information as below.
 ```bash
   version: Show Version Code
-  fp_gen: fp_gen STM32. Generate fringerprint data for specific platforms.
+  ota_protocols: ota_protocols STM32. Generate fringerprint data for specific platforms.
   token_gen: Generate token for the target command
 $ 
 ```
@@ -130,9 +130,9 @@ $
 Run `fp_gen STM32 11010 0 0` and you can get the log in your COM as below (the output are sequences of u8 so they are unreadable).
 ```bash
   version: Show Version Code
-  fp_gen: fp_gen STM32. Generate fringerprint data for specific platforms.
+  ota_protocols: ota_protocols STM32. Generate fringerprint data for specific platforms.
   token_gen: Generate token for the target command
-$ fp_gen STM32 13006 0 0 0 0 0 0 0
+$ ota_protocols STM32 13006 0 0 0 0 0 0 0
 ?□|?
 ?□l?
 ...

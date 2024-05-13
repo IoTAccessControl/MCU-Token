@@ -1,8 +1,0 @@
-omegaconf
-pyserial
-matplotlib
-scikit-learn
-tqdm
-numpy
-pandas
-seaborn

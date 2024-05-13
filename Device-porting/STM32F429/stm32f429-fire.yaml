@@ -4,12 +4,12 @@ app:
 - ../../uDevFi/iot_client/app/*.c
 
 fp_gen:
-- ../../uDevFi/iot_client/fp_gen/*.h
-- ../../uDevFi/iot_client/fp_gen/*.c
+- ../../uDevFi/iot_client/ota_protocols/*.h
+- ../../uDevFi/iot_client/ota_protocols/*.c
 
 INCLUDE:
 - ../../uDevFi/iot_client/app/
-- ../../uDevFi/iot_client/fp_gen/
+- ../../uDevFi/iot_client/ota_protocols/
 
 STM32F4-HAL:
 - Stm32Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rtc.c
