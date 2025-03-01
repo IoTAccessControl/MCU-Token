@@ -26,7 +26,7 @@ The authors' contacts are:
 clangllvm@126.com
 ```
 
-## Tips for Artifact Evaluation  
+## Tips for Artifact Evaluation (and Reproduction) 
 
 1. Run MCU-Token  
 
